@@ -87,9 +87,9 @@ bookList.addEventListener("click", removeBook);
 
 function newBook(e) {
   e.preventDefault();
-  let title = document.querySelector("#title").value,
-    author = document.querySelector("#author").value,
-    isbn = document.querySelector("#isbn").value;
+  let title = document.querySelector("#title").value="",
+    author = document.querySelector("#author").value="",
+    isbn = document.querySelector("#isbn").value="";
   let book = new Book(title, author, isbn);
 
   if (title === "" || author === "" || isbn === "") {
