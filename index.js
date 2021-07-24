@@ -49,9 +49,9 @@ class UI {
     bookList.appendChild(row);
   }
   static clearField() {
-    document.querySelector("#title").value;
-    document.querySelector("#author").value;
-    document.querySelector("#isbn").value;
+    document.querySelector("#title").value="";
+    document.querySelector("#author").value="";
+    document.querySelector("#isbn").value="";
   }
   static showAlert(message, classNames) {
     let div = document.createElement("div");
@@ -87,9 +87,9 @@ bookList.addEventListener("click", removeBook);
 
 function newBook(e) {
   e.preventDefault();
-  let title = document.querySelector("#title").value="",
-    author = document.querySelector("#author").value="",
-    isbn = document.querySelector("#isbn").value="";
+  let title = document.querySelector("#title").value,
+    author = document.querySelector("#author").value,
+    isbn = document.querySelector("#isbn").value=;
   let book = new Book(title, author, isbn);
 
   if (title === "" || author === "" || isbn === "") {
